@@ -114,7 +114,6 @@ const HorizontalList = <T,>({
           ref={scrollRef}
           renderItem={renderItem}
           showsHorizontalScrollIndicator={false}
-          className='overflow-hidden'
           {...getFlatlistProps()}
         />
     </View>

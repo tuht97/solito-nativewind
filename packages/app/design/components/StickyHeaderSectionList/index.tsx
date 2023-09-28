@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SectionList, SectionListProps } from 'react-native';
+import { SectionList } from 'react-native';
 import { StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 

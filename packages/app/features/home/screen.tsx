@@ -1,24 +1,17 @@
-import { A, H1, P, Text, TextLink } from 'app/design/typography'
-import { Row } from 'app/design/layout'
+import { Text } from 'app/design/typography'
 import { View } from 'app/design/view'
 import {
   FlatList,
   NativeScrollEvent,
-  ScrollView,
   SectionList,
   StyleSheet,
-  TouchableOpacity,
   ViewToken,
 } from 'react-native';
-import { MotiLink } from 'solito/moti'
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { SafeArea } from 'app/provider/safe-area';
-import SyncedList from 'app/design/components/TabSectionList';
 import { Image } from 'react-native'
-import Animated,{ useSharedValue,useAnimatedStyle,interpolate,Extrapolate } from "react-native-reanimated";
+import Animated,{ useSharedValue } from "react-native-reanimated";
 import { HeaderBar } from 'app/design/components/HeaderBar';
 import { SafeAreaProvider } from "react-native-safe-area-context";
-import { DynamicHeader } from 'app/design/components/TabSectionList/DynamicHeader';
 import { StickyHeaderSectionList } from 'app/design/components/StickyHeaderSectionList';
 import HorizontalList from 'app/design/components/TabSectionList/TabBar';
 export function HomeScreen() {

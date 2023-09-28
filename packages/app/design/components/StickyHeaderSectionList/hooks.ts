@@ -14,7 +14,6 @@ export function useStickyHeaderProps<ItemT, SectionT>(
     props: StickyHeaderSectionListProps<ItemT, SectionT>
   ) {
     const {
-      contentContainerStyle,
       onHeaderLayout,
       onMomentumScrollBegin,
       onMomentumScrollEnd,
@@ -23,7 +22,6 @@ export function useStickyHeaderProps<ItemT, SectionT>(
       onScrollEndDrag,
       onTabsLayout,
       stickyTabs = true,
-      style,
     } = props;
   
     const [headerHeight, setHeaderHeight] = useState(0);
