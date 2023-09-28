@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SectionList } from 'react-native';
+import { SectionList, SectionListProps } from 'react-native';
 import { StyleSheet, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 
@@ -13,7 +13,8 @@ declare module "react" {
   }
   
 const NOOP = () => {};
-const AnimatedComponent = Animated.createAnimatedComponent(SectionList);
+// refer to https://github.com/software-mansion/react-native-reanimated/blob/main/src/reanimated2/component/FlatList.tsx#L13C1-L14C1
+const AnimatedComponent = Animated.createAnimatedComponent(SectionList as any) as any
 const StickyHeaderSectionListInner = <ItemT, SectionT>(props: React.PropsWithChildren<StickyHeaderSectionListProps<ItemT, SectionT>>, ref: React.ForwardedRef<SectionList>) => {
     const {
         containerStyle,

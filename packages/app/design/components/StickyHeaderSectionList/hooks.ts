@@ -10,8 +10,8 @@ import {
 } from 'react-native-reanimated';
 import { StickyHeaderSectionListProps } from './types';
 
-export function useStickyHeaderProps(
-    props: StickyHeaderSectionListProps<unknown, unknown>
+export function useStickyHeaderProps<ItemT, SectionT>(
+    props: StickyHeaderSectionListProps<ItemT, SectionT>
   ) {
     const {
       contentContainerStyle,
